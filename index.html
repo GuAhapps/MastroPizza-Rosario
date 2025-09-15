@@ -4,7 +4,7 @@
     <meta charset="utf-t-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#F97316">
-    <title>MastroPizzas - Rosario</title>
+    <title>MastroPizza - Rosario</title>
     <link rel="icon" type="image/png" href="https://archive.org/download/favicom-01/favicom-01.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -285,11 +285,11 @@
           <header className="bg-brand-header border-b border-gray-700 sticky top-0 z-20">
             {/* Mobile Header */}
             <div className="max-w-md mx-auto flex items-center justify-center h-[4.5rem] lg:hidden">
-              <img src={logoUrl} alt="MastroPizzas Logo" className="h-14 w-auto"/>
+              <img src={logoUrl} alt="MastroPizza Logo" className="h-14 w-auto"/>
             </div>
             {/* Desktop Header */}
             <div className="hidden lg:flex max-w-7xl mx-auto items-center justify-between h-[4.5rem] px-8">
-              <img src={logoUrl} alt="MastroPizzas Logo" className="h-14 w-auto cursor-pointer" onClick={() => setView('menu')} />
+              <img src={logoUrl} alt="MastroPizza Logo" className="h-14 w-auto cursor-pointer" onClick={() => setView('menu')} />
               <nav className="flex items-center space-x-6">
                   <button onClick={() => setView('menu')} className="text-brand-text hover:text-brand-accent transition-colors font-medium">Menú</button>
                   <button onClick={() => setView('about')} className="text-brand-text hover:text-brand-accent transition-colors font-medium">Nosotros</button>
@@ -1134,7 +1134,7 @@
       }
       
       function AboutPage({onBack}) {
-        const CONSULTA_MESSAGE = "Hola MastroPizzas Rosario, quiero hacer una consulta";
+        const CONSULTA_MESSAGE = "Hola MastroPizza Rosario, quiero hacer una consulta";
         const WHATSAPP_CONSULTA_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(CONSULTA_MESSAGE)}`;
         const PHONE_NUMBER_URL = 'tel:3414247561';
 
@@ -1146,15 +1146,15 @@
                 <div className="bg-brand-card p-6 rounded-md border border-gray-700">
                     <h2 className="text-3xl font-extralight font-display text-brand-text mb-4">Sobre Nosotros</h2>
                     <p className="text-brand-text-light mb-4 font-light">
-                        Bienvenidos a <strong>MastroPizzas</strong>, tu rincón favorito en Rosario para disfrutar de la mejor comida casera. Desde 2019, nos dedicamos a preparar pizzas y hamburguesas con los ingredientes más frescos y todo el amor que nos caracteriza.
+                        Bienvenidos a <strong>MastroPizza</strong>, tu rincón favorito en Rosario para disfrutar de la mejor comida casera. Desde 2019, nos dedicamos a preparar pizzas y hamburguesas con los ingredientes más frescos y todo el amor que nos caracteriza.
                     </p>
                     <p className="text-brand-text-light mb-4 font-light">
                         Nuestro secreto es simple: recetas familiares, productos de calidad y un equipo apasionado por la buena cocina. ¡Gracias por elegirnos!
                     </p>
                     <div className="border-t border-gray-700 my-4"></div>
                     <h3 className="text-xl font-extralight text-brand-text mb-2">Horarios</h3>
-                    <p className="text-brand-text-light font-light">Lunes a Sábados: 11:30hs a 14:00hs - 19:30hs a 23:50hs</p>
-                    <p className="text-brand-text-light font-light mb-4">Domingo: 19:30hs a 23:50hs</p>
+                    <p className="text-brand-text-light font-light">Lunes a Sábados: 11:30hs a 14 hs - 19:30hs a 23:30hs</p>
+                    <p className="text-brand-text-light font-light mb-4">Domingo: 19:30 a 23:30 hs</p>
 
                     <div className="border-t border-gray-700 my-4"></div>
                     <h3 className="text-xl font-extralight text-brand-text mb-2">Ubicación</h3>
