@@ -139,6 +139,7 @@
         Pizzas: 'Pizzas',
         Hamburguesas: 'Hamburguesas',
         Sanguches: 'Sánguches',
+        Bebidas: 'Bebidas',
       };
 
       const menuItems = [
@@ -248,8 +249,24 @@
         { id: 8, name: 'Hamburguesa Criolla', category: Category.Hamburguesas, description: 'Medallón de carne, jamón, queso, cebolla, morrón, huevo frito, tomate y lechuga, con papas fritas.', sizes: [{ name: 'Simple', price: 8000 }, { name: 'Doble', price: 9000 }, { name: 'Triple', price: 10000 }], ingredients: ['Medallón de carne', 'Jamón', 'Queso', 'Cebolla', 'Morrón', 'Huevo frito', 'Tomate', 'Lechuga', 'Papas fritas'], imageUrls: ['']},
         // Sánguches
         { id: 301, name: 'Sánguche de Lomito', category: Category.Sanguches, description: 'Lomito, jamón, queso, huevo frito, lechuga, tomate, con papas fritas.', price: 13000, ingredients: ['Pan', 'Lomito', 'Jamón', 'Queso', 'Huevo frito', 'Lechuga', 'Tomate', 'Papas fritas'], imageUrls: ['']},
-        { id: 302, name: 'Sánguche Juanacho', category: Category.Sanguches, description: 'Jamón, queso, lechuga y tomate en pan de miga.', sizes: [{ name: 'Simple', price: 5000 }, { name: 'Doble', price: 6500 }], ingredients: ['Pan de miga', 'Jamón', 'Queso', 'Lechuga', 'Tomate'], imageUrls: ['']},
-        { id: 303, name: 'Sánguche Sacramento', category: Category.Sanguches, description: 'Jamón, queso, lechuga y tomate en pan árabe.', sizes: [{ name: 'Simple', price: 6000 }, { name: 'Doble', price: 7500 }], ingredients: ['Pan árabe', 'Jamón', 'Queso', 'Lechuga', 'Tomate'], imageUrls: ['']},
+        { id: 302, name: 'Sánguche Juanacho', category: Category.Sanguches, description: 'Jamón, queso, lechuga y tomate en pan de miga. ¡Pedilo con papas fritas!', sizes: [{ name: 'Simple', price: 5000 }, { name: 'con Papas', price: 6500 }], ingredients: ['Pan de miga', 'Jamón', 'Queso', 'Lechuga', 'Tomate', 'Papas fritas (opcional)'], imageUrls: ['']},
+        { id: 303, name: 'Sánguche Sacramento', category: Category.Sanguches, description: 'Jamón, queso, lechuga y tomate en pan árabe. ¡Pedilo con papas fritas!', sizes: [{ name: 'Simple', price: 6000 }, { name: 'con Papas', price: 7500 }], ingredients: ['Pan árabe', 'Jamón', 'Queso', 'Lechuga', 'Tomate', 'Papas fritas (opcional)'], imageUrls: ['']},
+        // Bebidas
+        { id: 401, name: 'Coca Cola 1,5 Lts', category: Category.Bebidas, description: 'Bebida gaseosa', price: 3500, imageUrls: ['https://ia801004.us.archive.org/3/items/coca-1.5/coca-1.5.png'] },
+        { id: 402, name: 'Coca Cola sin azúcar 1,5 Lts', category: Category.Bebidas, description: 'Bebida gaseosa sin azúcar', price: 3500, imageUrls: ['https://ia801004.us.archive.org/3/items/coca-1.5/coca-1.5.png'] },
+        { id: 403, name: 'Fanta 1,5 Lts', category: Category.Bebidas, description: 'Bebida gaseosa', price: 3500, imageUrls: ['https://ia801004.us.archive.org/3/items/coca-1.5/coca-1.5.png'] },
+        { id: 404, name: 'Fanta sin azúcar 1,5 Lts', category: Category.Bebidas, description: 'Bebida gaseosa sin azúcar', price: 3500, imageUrls: ['https://ia801004.us.archive.org/3/items/coca-1.5/coca-1.5.png'] },
+        { id: 405, name: 'Sprite 1,5 Lts', category: Category.Bebidas, description: 'Bebida gaseosa', price: 3500, imageUrls: ['https://ia801004.us.archive.org/3/items/coca-1.5/coca-1.5.png'] },
+        { id: 406, name: 'Aquarius Pera 1,5 Lts', category: Category.Bebidas, description: 'Bebida sin gas', price: 3500, imageUrls: ['https://ia801004.us.archive.org/3/items/coca-1.5/coca-1.5.png'] },
+        { id: 407, name: 'Aquarius Manzana 1,5 Lts', category: Category.Bebidas, description: 'Bebida sin gas', price: 3500, imageUrls: ['https://ia801004.us.archive.org/3/items/coca-1.5/coca-1.5.png'] },
+        { id: 408, name: 'Aquarius Pomelo 1,5 Lts', category: Category.Bebidas, description: 'Bebida sin gas', price: 3500, imageUrls: ['https://ia801004.us.archive.org/3/items/coca-1.5/coca-1.5.png'] },
+        { id: 409, name: 'Aquarius Limonada 1,5 Lts', category: Category.Bebidas, description: 'Bebida sin gas', price: 3500, imageUrls: ['https://ia801004.us.archive.org/3/items/coca-1.5/coca-1.5.png'] },
+        { id: 410, name: 'Schweppes Tónica 1,5 Lts', category: Category.Bebidas, description: 'Bebida gaseosa', price: 3500, imageUrls: ['https://ia801004.us.archive.org/3/items/coca-1.5/coca-1.5.png'] },
+        { id: 411, name: 'Schweppes Pomelo 1,5 Lts', category: Category.Bebidas, description: 'Bebida gaseosa', price: 3500, imageUrls: ['https://ia801004.us.archive.org/3/items/coca-1.5/coca-1.5.png'] },
+        { id: 412, name: 'Coca Cola 500ml', category: Category.Bebidas, description: 'Bebida gaseosa', price: 2000, imageUrls: ['https://ia801004.us.archive.org/3/items/coca-1.5/coca-1.5.png'] },
+        { id: 413, name: 'Fanta 500ml', category: Category.Bebidas, description: 'Bebida gaseosa', price: 2000, imageUrls: ['https://ia801004.us.archive.org/3/items/coca-1.5/coca-1.5.png'] },
+        { id: 414, name: 'Sprite 500ml', category: Category.Bebidas, description: 'Bebida gaseosa', price: 2000, imageUrls: ['https://ia801004.us.archive.org/3/items/coca-1.5/coca-1.5.png'] },
+        { id: 415, name: 'Agua Mineral 1,5 Lts', category: Category.Bebidas, description: 'Agua sin gas', price: 1500, imageUrls: ['https://ia801004.us.archive.org/3/items/coca-1.5/coca-1.5.png'] },
       ];
 
       const itemsById = menuItems.reduce((acc, item) => {
@@ -300,7 +317,7 @@
       }
       
       function CategoryNav({ selectedCategory, setSelectedCategory }) {
-        const categories = [Category.Todos, Category.Pizzas, Category.Hamburguesas, Category.Sanguches];
+        const categories = [Category.Todos, Category.Pizzas, Category.Hamburguesas, Category.Sanguches, Category.Bebidas];
         const navRef = useRef(null);
 
         useEffect(() => {
@@ -770,17 +787,42 @@
 
       function ComboBuilderModal({ item, onClose, onConfirm }) {
         const [selectedFlavor, setSelectedFlavor] = useState(null);
+        const [selectedDrink, setSelectedDrink] = useState(null);
+        const [step, setStep] = useState('flavor'); // 'flavor' or 'drink'
         
         const pizzaFlavors = useMemo(() => 
           menuItems.filter(i => i.category === Category.Pizzas && !i.isMastro && !i.isPromo), 
           []
         );
 
+        const drinkOptions = useMemo(() =>
+            menuItems.filter(i => i.category === Category.Bebidas && i.name.includes('500ml')),
+        []);
+
+        useEffect(() => {
+            if (item) {
+                setSelectedFlavor(null);
+                setSelectedDrink(null);
+                setStep('flavor');
+            }
+        }, [item]);
+
         if (!item) return null;
 
+        const handleNextStep = () => {
+            if (selectedFlavor) {
+                setStep('drink');
+            }
+        };
+
+        const handleGoBack = () => {
+            setStep('flavor');
+            setSelectedDrink(null);
+        };
+
         const handleConfirm = () => {
-          if (selectedFlavor) {
-            onConfirm(item, selectedFlavor);
+          if (selectedFlavor && selectedDrink) {
+            onConfirm(item, selectedFlavor, selectedDrink);
           }
         };
 
@@ -791,24 +833,42 @@
               <div className="p-4 border-b border-gray-700 flex-shrink-0 text-center">
                 <h2 className="text-2xl font-extralight text-brand-accent font-display">Arma tu {item.name}</h2>
                 <p className="text-brand-text-light font-light mt-1">{item.description}</p>
-                <p className="font-semibold mt-2 text-brand-text">Elegí tu gusto de pizza:</p>
+                <p className="font-semibold mt-2 text-brand-text">
+                    {step === 'flavor' ? 'Paso 1: Elegí tu gusto de pizza' : 'Paso 2: Elegí tu bebida'}
+                </p>
               </div>
               
-              {/* Flavor List */}
+              {/* Content List */}
               <div className="flex-grow overflow-y-auto p-4 space-y-2 no-scrollbar">
-                {pizzaFlavors.map(flavor => (
-                  <button 
-                    key={flavor.id} 
-                    onClick={() => setSelectedFlavor(flavor)}
-                    className={`w-full text-left p-3 rounded-md border transition-all duration-200 ${
-                      selectedFlavor?.id === flavor.id 
-                      ? 'bg-brand-accent/20 border-brand-accent' 
-                      : 'bg-gray-800 border-gray-700 hover:bg-gray-700'
-                    }`}
-                  >
-                    <h4 className="font-semibold text-brand-text">{flavor.name.replace(/^Pizza (de )?/, '')}</h4>
-                  </button>
-                ))}
+                {step === 'flavor' ? (
+                  pizzaFlavors.map(flavor => (
+                    <button 
+                      key={flavor.id} 
+                      onClick={() => setSelectedFlavor(flavor)}
+                      className={`w-full text-left p-3 rounded-md border transition-all duration-200 ${
+                        selectedFlavor?.id === flavor.id 
+                        ? 'bg-brand-accent/20 border-brand-accent' 
+                        : 'bg-gray-800 border-gray-700 hover:bg-gray-700'
+                      }`}
+                    >
+                      <h4 className="font-semibold text-brand-text">{flavor.name.replace(/^Pizza (de )?/, '')}</h4>
+                    </button>
+                  ))
+                ) : (
+                  drinkOptions.map(drink => (
+                    <button
+                      key={drink.id}
+                      onClick={() => setSelectedDrink(drink)}
+                      className={`w-full text-left p-3 rounded-md border transition-all duration-200 ${
+                        selectedDrink?.id === drink.id
+                          ? 'bg-brand-accent/20 border-brand-accent'
+                          : 'bg-gray-800 border-gray-700 hover:bg-gray-700'
+                      }`}
+                    >
+                      <h4 className="font-semibold text-brand-text">{drink.name}</h4>
+                    </button>
+                  ))
+                )}
               </div>
 
               {/* Footer */}
@@ -818,13 +878,27 @@
                     <span className="text-2xl font-bold text-brand-accent">{formatPrice(item.price)}</span>
                   </div>
                   <div className="grid grid-cols-2 gap-4">
-                    <button onClick={onClose} className="bg-gray-700 text-brand-text py-3 rounded-md font-semibold hover:bg-gray-600 transition-colors">Cancelar</button>
-                    <button 
-                      onClick={handleConfirm} 
-                      disabled={!selectedFlavor} 
-                      className="bg-brand-accent text-white py-3 rounded-md font-semibold hover:bg-orange-600 transition-transform transform hover:scale-105 disabled:bg-gray-500 disabled:cursor-not-allowed disabled:scale-100">
-                      Agregar al Carrito
-                    </button>
+                    {step === 'flavor' ? (
+                        <button onClick={onClose} className="bg-gray-700 text-brand-text py-3 rounded-md font-semibold hover:bg-gray-600 transition-colors">Cancelar</button>
+                    ) : (
+                        <button onClick={handleGoBack} className="bg-gray-700 text-brand-text py-3 rounded-md font-semibold hover:bg-gray-600 transition-colors">Atrás</button>
+                    )}
+                    
+                    {step === 'flavor' ? (
+                      <button 
+                        onClick={handleNextStep} 
+                        disabled={!selectedFlavor} 
+                        className="bg-brand-accent text-white py-3 rounded-md font-semibold hover:bg-orange-600 transition-transform transform hover:scale-105 disabled:bg-gray-500 disabled:cursor-not-allowed disabled:scale-100">
+                        Elegir Bebida
+                      </button>
+                    ) : (
+                      <button 
+                        onClick={handleConfirm} 
+                        disabled={!selectedDrink} 
+                        className="bg-brand-accent text-white py-3 rounded-md font-semibold hover:bg-orange-600 transition-transform transform hover:scale-105 disabled:bg-gray-500 disabled:cursor-not-allowed disabled:scale-100">
+                        Agregar al Carrito
+                      </button>
+                    )}
                   </div>
               </div>
             </div>
@@ -1012,7 +1086,7 @@
           if (size) {
             const sizedItem = {
               ...item,
-              id: `${item.id}-${size.name.toLowerCase()}`,
+              id: `${item.id}-${size.name.toLowerCase().replace(/\s/g, '-')}`,
               name: `${item.name} (${size.name})`,
               price: size.price,
               sizes: undefined, // Clear sizes for the cart item
@@ -1066,7 +1140,7 @@
 
       function MenuPage({ onSelectItem, onAdd, selectedCategory, onAddHalf, onAddQuarter }) {
         const renderAllItems = () => {
-            const categoryOrder = [Category.Pizzas, Category.Hamburguesas, Category.Sanguches];
+            const categoryOrder = [Category.Pizzas, Category.Hamburguesas, Category.Sanguches, Category.Bebidas];
             
             return (
                 <div className="p-4 space-y-8">
@@ -1076,7 +1150,7 @@
                         );
                         if (itemsInCategory.length === 0) return null;
                         
-                        const isListView = category === Category.Hamburguesas || category === Category.Sanguches;
+                        const isListView = category === Category.Hamburguesas || category === Category.Sanguches || category === Category.Bebidas;
 
                         return (
                             <section key={category} aria-labelledby={`category-title-${category}`}>
@@ -1105,7 +1179,7 @@
             const filteredItems = menuItems.filter(item => 
                 item.category === selectedCategory && (selectedCategory !== Category.Pizzas || item.isMastro || item.isPromo) && item.id !== 903
             );
-            const isListView = selectedCategory === Category.Hamburguesas || selectedCategory === Category.Sanguches;
+            const isListView = selectedCategory === Category.Hamburguesas || selectedCategory === Category.Sanguches || selectedCategory === Category.Bebidas;
             
             return (
                 <div className="p-4">
@@ -1584,7 +1658,7 @@
 
         const addToCart = useCallback((item, quantity) => {
             const itemId = item.id;
-            if (item.isHalf || item.isQuarter || String(item.id).startsWith('mastro-') || item.isCombo || item.name.includes('(')) {
+            if (item.isHalf || item.isQuarter || String(item.id).startsWith('mastro-') || item.isCombo || (item.name.includes('(') && !item.id.startsWith('mastro-'))) {
                 setCustomItems(prev => ({...prev, [itemId]: item}));
             }
             
@@ -1675,13 +1749,13 @@
             closeMastroBuilder();
         };
 
-        const handleConfirmCombo = (comboItem, selectedFlavor) => {
+        const handleConfirmCombo = (comboItem, selectedFlavor, selectedDrink) => {
             const comboId = `combo-${Date.now()}`;
             const customComboItem = {
                 ...comboItem,
                 id: comboId,
                 name: 'Combo Mini Mastro',
-                description: `Sabor: ${selectedFlavor.name.replace(/^Pizza (de )?/, '')}`,
+                description: `Sabor: ${selectedFlavor.name.replace(/^Pizza (de )?/, '')}, Bebida: ${selectedDrink.name}`,
                 price: comboItem.price,
                 isCombo: true,
             };
